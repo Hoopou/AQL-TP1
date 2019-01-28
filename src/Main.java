@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -13,12 +11,22 @@ public class Main {
 		cvVincent.Competances.add("langues");
 		cvVincent.Attentes = "Bonne documentation!";
 		
+		CV cvJeanSebastien = new CV();
+		cvJeanSebastien.Nom = "Beaulne";
+		cvJeanSebastien.Prenom = "Jean-Sébastien";
+		cvJeanSebastien.Formation = cvVincent.Formation.Doctora;
+		cvJeanSebastien.experienceTravail = 1.65f;
+		cvJeanSebastien.Competances.add("programmation");
+		cvJeanSebastien.Competances.add("condition physique");
+		cvJeanSebastien.Attentes = "Pas trop de travaux à faire à la maison.";
 		
 		
-		System.out.println("Bienvenu chez Barette!");
+		
+		System.out.println("Bienvenu chez Barette!\n");
 		
 		
 		cvVincent.affiche();
+		cvJeanSebastien.affiche();
 	}
 
 }

@@ -2,12 +2,12 @@ import java.util.ArrayList;
 
 public class CV {
 	public enum formations {Secondaire , DEC , BAC , Maitrise , Doctora , DEP}
-	public static String Nom = "";
-	public static String Prenom = "";
-	public static formations Formation = formations.Secondaire;
-	public static float experienceTravail = 0f;
-	public static ArrayList<String> Competances = new ArrayList<String>();
-	public static String Attentes = "";
+	public  String Nom = "";
+	public  String Prenom = "";
+	public  formations Formation = formations.Secondaire;
+	public  float experienceTravail = 0f;
+	public  ArrayList<String> Competances = new ArrayList<String>();
+	public  String Attentes = "";
 	
 	public void affiche() {
 		System.out.println("Mon nom est: " + Nom + " " + Prenom);
@@ -17,6 +17,6 @@ public class CV {
 		for(String comp : Competances) {
 			System.out.println("\t" + comp);
 		}
-		System.out.println("Mes attentes pour le cours sont: " + Attentes);
+		System.out.println("Mes attentes pour le cours sont: " + Attentes + "\n");
 	}
 }
